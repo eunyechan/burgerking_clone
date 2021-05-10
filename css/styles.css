@@ -1,0 +1,11 @@
+@import "reset.css";
+
+/* components */
+@import "/css/components/header-title.css";
+
+body {
+  margin: 0px 40px;
+  font-family: sans-serif;
+  background-color: rgba(242, 235, 230, 0.4);
+  display: flex;
+}
