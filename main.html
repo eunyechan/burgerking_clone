@@ -5,64 +5,189 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>버거킹</title>
   </head>
   <body>
     <header class="header-menu">
       <div class="header-menu-inline">
-        <img class="header-logo" src="./images/burgerking.png" />
-        <div class="header-menu-inline-title-box">
-          <span class="header-menu-inline-title-box__first"
-            >메뉴소개 <i class="fas fa-caret-down"></i
-          ></span>
-          <span class="header-menu-inline-title-box__second"
-            >매장소개 <i class="fas fa-caret-down"></i
-          ></span>
-          <span class="header-menu-inline-title-box__third"
-            >이벤트 <i class="fas fa-caret-down"></i
-          ></span>
-          <span class="header-menu-inline-title-box__fourth"
-            >브랜드스토리 <i class="fas fa-caret-down"></i
-          ></span>
-        </div>
-        <div class="header-menu-inline__button">
-          <div class="header-menu-inline__top-border"></div>
-          <button>딜리버리주문 <i class="fas fa-chevron-right"></i></button>
-          <div class="header-menu-inline__bottom-border"></div>
-        </div>
+        <ul class="header-menu-inline-title-box">
+          <a href=""
+            ><img class="header-logo" src="./images/burgerking.png"
+          /></a>
+          <li
+            class="header-menu-inline-title-box__nav header-menu-inline__menu"
+          >
+            메뉴소개
+            <i class="fas fa-caret-down"></i>
+            <ul
+              class="header-menu-inline-subtitle__box header-menu-inline-subtitle__menu"
+            >
+              <li class="header-menu-inline-menu__subtitle">
+                <a href="#">스폐셜&할인팩</a>
+              </li>
+              <li class="header-menu-inline-menu__subtitle">
+                <a href="#">프리미엄</a>
+              </li>
+              <li class="header-menu-inline-menu__subtitle">
+                <a href="#">와퍼</a>
+              </li>
+              <li class="header-menu-inline-menu__subtitle">
+                <a href="#">주니어&버거</a>
+              </li>
+              <li class="header-menu-inline-menu__subtitle">
+                <a href="#">올데이킹&치킨버거</a>
+              </li>
+              <li class="header-menu-inline-menu__subtitle">
+                <a href="#">사이드</a>
+              </li>
+              <li class="header-menu-inline-menu__subtitle">
+                <a href="#">음료&디저트</a>
+              </li>
+              <ul
+                class="header-menu-inline-subtitle__box header-menu-inline-subtitle__menu"
+              >
+                <li
+                  class="header-menu-inline-store__subtitle"
+                  style="
+                    margin-left: 200px;
+                    margin-top: 100px;
+                    z-index: 2;
+                    border: 1px solid black;
+                  "
+                >
+                  <a href="#">매장찾기</a>
+                </li>
+              </ul>
+
+              <li
+                class="header-menu-inline-event__subtitle"
+                style="margin-left: 400px; margin-top: -30px"
+              >
+                <a href="#">이벤트</a>
+              </li>
+              <li
+                class="header-menu-inline-brand__subtitle"
+                style="margin-left: 600px"
+              >
+                <a href="#">버거킹스토리</a>
+              </li>
+              <li
+                class="header-menu-inline-brand__subtitle"
+                style="margin-left: 600px"
+              >
+                <a href="#">WHY 버거킹</a>
+              </li>
+              <li
+                class="header-menu-inline-brand__subtitle"
+                style="margin-left: 600px"
+              >
+                <a href="#">버거킹 NEWS</a>
+              </li>
+            </ul>
+          </li>
+          <!-- 매장소개 -->
+          <li
+            class="header-menu-inline-title-box__nav header-menu-inline__store"
+          >
+            매장소개
+            <i class="fas fa-caret-down"></i>
+            <ul class="header-menu-inline-subtitle__box">
+              <li
+                class="header-menu-inline__subtitle header-menu-inline-subtitle__store"
+              >
+                <a href="">매장찾기</a>
+              </li>
+            </ul>
+          </li>
+          <!-- 이벤트 -->
+          <li
+            class="header-menu-inline-title-box__nav header-menu-inline__event"
+          >
+            이벤트
+            <i class="fas fa-caret-down"></i>
+            <ul
+              class="header-menu-inline-subtitle__box header-menu-inline-subtitle__event"
+            >
+              <li class="header-menu-inline__subtitle">
+                <a href="">이벤트</a>
+              </li>
+            </ul>
+          </li>
+          <!-- 브랜드스토리 -->
+          <li
+            class="header-menu-inline-title-box__nav header-menu-inline__brand"
+          >
+            브랜드스토리
+            <i class="fas fa-caret-down"></i>
+            <ul
+              class="header-menu-inline-subtitle__box header-menu-inline-subtitle__brand"
+            >
+              <li class="header-menu-inline__subtitle">
+                <a href="">버거킹스토리</a>
+              </li>
+              <li class="header-menu-inline__subtitle">
+                <a href="">WHY 버거킹</a>
+              </li>
+              <li class="header-menu-inline__subtitle">
+                <a href="">버거킹 NEWS</a>
+              </li>
+            </ul>
+          </li>
+          <div class="header-menu-inline__button">
+            <div class="header-menu-inline__top-border"></div>
+            <button>딜리버리주문 <i class="fas fa-chevron-right"></i></button>
+            <div class="header-menu-inline__bottom-border"></div>
+          </div>
+        </ul>
       </div>
     </header>
     <!-- body -->
     <section class="banner-image__slider">
       <div class="banner-image-inline__box">
-        <img
-          class="banner-image-inline-box__image"
-          src="/images/burgerkingbannerone.png"
-        />
-        <img
-          class="banner-image-inline-box__image"
-          src="/images/burgerkingbannertwo.png"
-        />
-        <img
-          class="banner-image-inline-box__image"
-          src="/images/burgerkingbannerthree.png"
-        />
-        <img
-          class="banner-image-inline-box__image"
-          src="/images/burgerkingbannerfour.png"
-        />
-        <img
-          class="banner-image-inline-box__image"
-          src="/images/burgerkingbannerfive.png"
-        />
-        <img
-          class="banner-image-inline-box__image"
-          src="/images/burgerkingbannersix.png"
-        />
-        <img
-          class="banner-image-inline-box__image"
-          src="/images/burgerkingbannerseven.png"
-        />
+        <ul>
+          <li class="aa">
+            <img
+              class="banner-image-inline-box__image"
+              src="/images/burgerkingbannerone.png"
+            />
+          </li>
+          <li>
+            <img
+              class="banner-image-inline-box__image"
+              src="/images/burgerkingbannertwo.png"
+            />
+          </li>
+          <li>
+            <img
+              class="banner-image-inline-box__image"
+              src="/images/burgerkingbannerthree.png"
+            />
+          </li>
+          <li>
+            <img
+              class="banner-image-inline-box__image"
+              src="/images/burgerkingbannerfour.png"
+            />
+          </li>
+          <!-- <li>
+            <img
+              class="banner-image-inline-box__image"
+              src="/images/burgerkingbannerfive.png"
+            />
+          </li>
+          <li>
+            <img
+              class="banner-image-inline-box__image"
+              src="/images/burgerkingbannersix.png"
+            />
+          </li>
+          <li>
+            <img
+              class="banner-image-inline-box__image"
+              src="/images/burgerkingbannerseven.png"
+            />
+          </li> -->
+        </ul>
       </div>
     </section>
 

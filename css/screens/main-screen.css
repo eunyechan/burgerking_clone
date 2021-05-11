@@ -1,0 +1,18 @@
+.banner-image__slider {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+}
+.banner-image-inline__box {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.banner-image-inline-box__image {
+  display: flex;
+  height: 100%;
+}
