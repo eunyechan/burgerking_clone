@@ -1,8 +1,6 @@
 .header-menu {
   background-color: #fff;
-  height: 80px;
-  width: 100vw;
-  margin-left: -40px;
+  height: 10vh;
   font-size: 18px;
   font-weight: 700;
   font-family: sans-serif;
@@ -11,56 +9,122 @@
   justify-content: center;
   align-items: center;
   position: fixed;
+  z-index: 50;
+  left: 0;
+  right: 0;
+  top: 0;
 }
 .header-menu-inline {
-  width: 100vw;
+  height: 10vh;
   justify-content: center;
   align-items: center;
   display: flex;
+  width: 1150px;
+}
+.header-logo-box {
+  height: 80px;
+  width: 12vw;
+  display: flex;
+  justify-content: flex-start;
 }
 .header-logo {
+  display: flex;
+  left: 0;
+}
+.header-logo img {
   height: 80px;
-  width: 77px;
-  margin-left: 180px;
-  cursor: context-menu;
+  width: 75px;
 }
 .header-menu-inline-title-box {
   display: flex;
-  align-items: center;
-  width: 100vw;
   margin-top: 5px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.header-menu-inline-title-box__nav {
+  font-size: 22px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: context-menu;
+}
+.header-menu-inline-title-box > div {
+  width: 200.2px;
+  display: flex;
+  position: absolute;
 }
 .header-menu-inline-subtitle__box {
   visibility: hidden;
   position: absolute;
   opacity: 0;
 }
-
-.header-menu-inline-title-box__nav {
-  font-size: 22px;
+.header-menu-inline-dropdown-menu__box {
   display: flex;
-  justify-content: flex-start;
+  flex-direction: column;
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  border: 4px solid red;
+  background-color: white;
+  margin-top: 40rem;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  visibility: hidden;
   align-items: center;
-  height: 115px;
-  width: 225px;
-  cursor: context-menu;
+  opacity: 0;
 }
-.header-menu-inline-title-box__nav:hover .header-menu-inline-subtitle__box {
+.header-menu-inline-dropdown-menu-inline__box {
+  border: 2px solid black;
+  width: 100%;
+  display: flex;
+}
+.header-menu-inline-dropdown-menu__inline {
+  display: flex;
+  /* width: 50%; */
+  flex-direction: column;
+  border: 1px solid black;
+}
+.header-menu-inline-dropdown-menu__subtitle {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.header-menu-inline-title-box__nav:hover
+  .header-menu-inline-dropdown-menu__box {
+  box-sizing: border-box;
+  display: flex;
+  height: 100%;
+  margin-top: 32em;
+  padding-bottom: 20rem;
+  left: 0;
+  background-color: white;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  visibility: visible;
+  position: absolute;
+  opacity: 1;
+}
+
+/* .header-menu-inline-title-box__nav:hover .header-menu-inline-subtitle__box {
   height: 115px;
   visibility: visible;
-  display: block;
+  display: flex;
   opacity: 1;
   background-color: white;
   height: 325px;
-  width: 100vw;
+  width: 100%;
   left: 0;
-  margin-top: 440px;
+  margin-top: 410px;
   font-size: 14px;
   font-weight: bold;
   line-height: 25px;
   justify-content: center;
   align-items: center;
-}
+  border: 1px solid black;
+} */
 .header-menu-inline__menu:hover .header-menu-inline-subtitle__box {
   padding-left: 23vw;
 }
@@ -74,23 +138,25 @@
   padding-left: 60.5vw;
 }
 .header-menu-inline__menu {
-  padding-left: 90px;
+  width: 100%;
 }
 .header-menu-inline__store {
-  padding-left: 10px;
+  width: 100%;
+  margin-left: -70px;
 }
 .header-menu-inline__event {
-  padding-left: 5px;
+  width: 100%;
+  margin-left: -70px;
 }
 .header-menu-inline__brand {
-  padding-right: 60px;
+  width: 100%;
+  margin-left: -70px;
 }
 .header-menu-inline__button {
   position: relative;
-  margin-right: 170px;
 }
+
 .header-menu-inline button {
-  margin-right: 25px;
   border: 1px solid white;
   color: white;
   background-color: #e0342c;
@@ -99,10 +165,14 @@
   font-size: 18px;
   width: 160px;
   height: 47px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-menu-inline-title-box i {
   font-size: 10px;
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -114,7 +184,7 @@
 
 .header-menu-inline__top-border {
   position: absolute;
-  right: 92px;
+  right: 67px;
   border: 1px solid #e0342c;
   border-radius: 10% 40% 0% 0%;
   background-color: #e0342c;
@@ -124,7 +194,7 @@
 }
 .header-menu-inline__bottom-border {
   position: absolute;
-  right: 26px;
+  right: 1px;
   border: 1px solid #e0342c;
   border-radius: 0% 0% 10% 40%;
   background-color: #e0342c;

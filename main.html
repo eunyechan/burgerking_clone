@@ -10,22 +10,89 @@
   <body>
     <header class="header-menu">
       <div class="header-menu-inline">
-        <ul class="header-menu-inline-title-box">
-          <a href=""
-            ><img class="header-logo" src="./images/burgerking.png"
+        <div class="header-logo-box">
+          <a class="header-logo" href=""
+            ><img src="./images/burgerking.png"
           /></a>
+        </div>
+        <ul class="header-menu-inline-title-box">
           <li
             class="header-menu-inline-title-box__nav header-menu-inline__menu"
           >
-            메뉴소개
-            <i class="fas fa-caret-down"></i>
-            <ul
+            <div>
+              <span>메뉴소개</span>
+              <i class="fas fa-caret-down"></i>
+            </div>
+            <div class="header-menu-inline-dropdown-menu__box">
+              <div class="header-menu-inline-dropdown-menu-inline__box">
+                <div class="header-menu-inline-dropdown-menu__inline">
+                  <div class="header-menu-inline-dropdown-menu__subtitle">
+                    <span>
+                      <a href="">스페셜&할인팩</a>
+                    </span>
+                    <span>
+                      <a href="">프리미엄</a>
+                    </span>
+                    <span>
+                      <a href="">와퍼</a>
+                    </span>
+                    <span>
+                      <a href="">주니어&버거</a>
+                    </span>
+                    <span>
+                      <a href="">올데이킹&치킨버거</a>
+                    </span>
+                    <span>
+                      <a href="">사이드</a>
+                    </span>
+                    <span>
+                      <a href="">음료&디저트</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="header-menu-inline-dropdown-menu__inline">
+                  <div class="header-menu-inline-dropdown-menu__subtitle">
+                    <span>
+                      <a href="">매장찾기</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="header-menu-inline-dropdown-menu__inline">
+                  <div class="header-menu-inline-dropdown-menu__subtitle">
+                    <span>
+                      <a href="">이벤트</a>
+                    </span>
+                  </div>
+                </div>
+
+                <div class="header-menu-inline-dropdown-menu__inline">
+                  <div class="header-menu-inline-dropdown-menu__subtitle">
+                    <span>
+                      <a href="">브랜드 스토리</a>
+                    </span>
+                    <span>
+                      <a href="">WHY 버거킹</a>
+                    </span>
+                    <span>
+                      <a href="">버거킹 NEWS</a>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- <ul
               class="header-menu-inline-subtitle__box header-menu-inline-subtitle__menu"
             >
               <li class="header-menu-inline-menu__subtitle">
                 <a href="#">스폐셜&할인팩</a>
               </li>
               <li class="header-menu-inline-menu__subtitle">
+                <a href="#">프리미엄</a>
+              </li>
+               <li class="header-menu-inline-menu__subtitle">
                 <a href="#">프리미엄</a>
               </li>
               <li class="header-menu-inline-menu__subtitle">
@@ -42,69 +109,38 @@
               </li>
               <li class="header-menu-inline-menu__subtitle">
                 <a href="#">음료&디저트</a>
-              </li>
-              <ul
-                class="header-menu-inline-subtitle__box header-menu-inline-subtitle__menu"
-              >
-                <li
-                  class="header-menu-inline-store__subtitle"
-                  style="
-                    margin-left: 200px;
-                    margin-top: 100px;
-                    z-index: 2;
-                    border: 1px solid black;
-                  "
-                >
-                  <a href="#">매장찾기</a>
-                </li>
-              </ul>
-
-              <li
-                class="header-menu-inline-event__subtitle"
-                style="margin-left: 400px; margin-top: -30px"
-              >
-                <a href="#">이벤트</a>
-              </li>
-              <li
-                class="header-menu-inline-brand__subtitle"
-                style="margin-left: 600px"
-              >
-                <a href="#">버거킹스토리</a>
-              </li>
-              <li
-                class="header-menu-inline-brand__subtitle"
-                style="margin-left: 600px"
-              >
-                <a href="#">WHY 버거킹</a>
-              </li>
-              <li
-                class="header-menu-inline-brand__subtitle"
-                style="margin-left: 600px"
-              >
-                <a href="#">버거킹 NEWS</a>
-              </li>
-            </ul>
+              </li> 
+            </ul> -->
           </li>
+
           <!-- 매장소개 -->
           <li
             class="header-menu-inline-title-box__nav header-menu-inline__store"
           >
-            매장소개
-            <i class="fas fa-caret-down"></i>
-            <ul class="header-menu-inline-subtitle__box">
+            <div>
+              <span>매장소개</span>
+              <i class="fas fa-caret-down"></i>
+            </div>
+
+            <!-- <ul class="header-menu-inline-subtitle__box">
               <li
                 class="header-menu-inline__subtitle header-menu-inline-subtitle__store"
               >
                 <a href="">매장찾기</a>
               </li>
-            </ul>
+            </ul> -->
           </li>
+
           <!-- 이벤트 -->
           <li
             class="header-menu-inline-title-box__nav header-menu-inline__event"
           >
-            이벤트
-            <i class="fas fa-caret-down"></i>
+            <div>
+              <span
+                >이벤트
+                <i class="fas fa-caret-down"></i>
+              </span>
+            </div>
             <ul
               class="header-menu-inline-subtitle__box header-menu-inline-subtitle__event"
             >
@@ -113,12 +149,15 @@
               </li>
             </ul>
           </li>
+
           <!-- 브랜드스토리 -->
           <li
             class="header-menu-inline-title-box__nav header-menu-inline__brand"
           >
-            브랜드스토리
-            <i class="fas fa-caret-down"></i>
+            <div>
+              <span>브랜드스토리</span>
+              <i class="fas fa-caret-down"></i>
+            </div>
             <ul
               class="header-menu-inline-subtitle__box header-menu-inline-subtitle__brand"
             >
@@ -133,16 +172,17 @@
               </li>
             </ul>
           </li>
-          <div class="header-menu-inline__button">
-            <div class="header-menu-inline__top-border"></div>
-            <button>딜리버리주문 <i class="fas fa-chevron-right"></i></button>
-            <div class="header-menu-inline__bottom-border"></div>
-          </div>
         </ul>
+        <div class="header-menu-inline__button">
+          <div class="header-menu-inline__top-border"></div>
+          <button>딜리버리주문 <i class="fas fa-chevron-right"></i></button>
+          <div class="header-menu-inline__bottom-border"></div>
+        </div>
       </div>
     </header>
+
     <!-- body -->
-    <section class="banner-image__slider">
+    <!-- <section class="banner-image__slider">
       <div class="banner-image-inline__box">
         <ul>
           <li class="aa">
@@ -169,7 +209,7 @@
               src="/images/burgerkingbannerfour.png"
             />
           </li>
-          <!-- <li>
+           <li>
             <img
               class="banner-image-inline-box__image"
               src="/images/burgerkingbannerfive.png"
@@ -186,10 +226,10 @@
               class="banner-image-inline-box__image"
               src="/images/burgerkingbannerseven.png"
             />
-          </li> -->
+          </li> 
         </ul>
       </div>
-    </section>
+    </section> -->
 
     <script
       src="https://kit.fontawesome.com/515636069a.js"
