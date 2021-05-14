@@ -8,229 +8,138 @@
     <title>버거킹</title>
   </head>
   <body>
-    <header class="header-menu">
-      <div class="header-menu-inline">
-        <div class="header-logo-box">
-          <a class="header-logo" href=""
-            ><img src="./images/burgerking.png"
-          /></a>
-        </div>
-        <ul class="header-menu-inline-title-box">
-          <li
-            class="header-menu-inline-title-box__nav header-menu-inline__menu"
-          >
-            <div>
-              <span>메뉴소개</span>
-              <i class="fas fa-caret-down"></i>
-            </div>
-            <div class="header-menu-inline-dropdown-menu__box">
-              <div class="header-menu-inline-dropdown-menu-inline__box">
-                <div class="header-menu-inline-dropdown-menu__inline">
-                  <div class="header-menu-inline-dropdown-menu__subtitle">
-                    <span>
-                      <a href="">스페셜&할인팩</a>
-                    </span>
-                    <span>
-                      <a href="">프리미엄</a>
-                    </span>
-                    <span>
-                      <a href="">와퍼</a>
-                    </span>
-                    <span>
-                      <a href="">주니어&버거</a>
-                    </span>
-                    <span>
-                      <a href="">올데이킹&치킨버거</a>
-                    </span>
-                    <span>
-                      <a href="">사이드</a>
-                    </span>
-                    <span>
-                      <a href="">음료&디저트</a>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="header-menu-inline-dropdown-menu__inline">
-                  <div class="header-menu-inline-dropdown-menu__subtitle">
-                    <span>
-                      <a href="">매장찾기</a>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="header-menu-inline-dropdown-menu__inline">
-                  <div class="header-menu-inline-dropdown-menu__subtitle">
-                    <span>
-                      <a href="">이벤트</a>
-                    </span>
-                  </div>
-                </div>
-
-                <div class="header-menu-inline-dropdown-menu__inline">
-                  <div class="header-menu-inline-dropdown-menu__subtitle">
-                    <span>
-                      <a href="">브랜드 스토리</a>
-                    </span>
-                    <span>
-                      <a href="">WHY 버거킹</a>
-                    </span>
-                    <span>
-                      <a href="">버거킹 NEWS</a>
-                    </span>
-                  </div>
+    <div id="app">
+      <div class="subWrap01">
+        <div class="headerWrap">
+          <div class="head__menuWrap GNB_open">
+            <div class="web__container">
+              <a href="">
+                <img class="WEB logo" src="/images/burgerking.png" alt="" />
+              </a>
+              <div class="MOB m_utilWrap">
+                <div class="m_top">
+                  <button class="btn_head_close"></button>
                 </div>
               </div>
+              <div class="GNBWrap">
+                <ul>
+                  <!-- 메뉴소개 -->
+                  <li>
+                    <button type="button">
+                      <span>메뉴소개<i class="fas fa-sort-down"></i></span>
+                    </button>
+                    <ul class="submenu">
+                      <li>
+                        <a href=""><span>스페셜&할인팩</span> </a>
+                      </li>
+                      <li>
+                        <a href=""><span>프리미엄</span> </a>
+                      </li>
+                      <li>
+                        <a href=""><span>와퍼</span> </a>
+                      </li>
+                      <li>
+                        <a href=""><span>주니어&버거</span> </a>
+                      </li>
+                      <li>
+                        <a href=""><span>올데이킹&치킨버거</span> </a>
+                      </li>
+                      <li>
+                        <a href=""><span>사이드</span> </a>
+                      </li>
+                      <li>
+                        <a href=""><span>음료&디저트</span> </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- 매장소개 -->
+                  <li class="menu__open">
+                    <button type="button">
+                      <span> 매장소개 </span>
+                      <i class="fas fa-sort-down down__iocon"></i>
+                    </button>
+
+                    <ul class="submenu">
+                      <li>
+                        <a>
+                          <span>매장찾기</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- 이벤트 -->
+                  <li class="menu__open">
+                    <button type="button">
+                      <span>이벤트</span>
+                      <i class="fas fa-sort-down down__iocon"></i>
+                    </button>
+                    <ul class="submenu">
+                      <li>
+                        <a href=""><span>이벤트</span></a>
+                      </li>
+                      <li class="MOB">
+                        <a href=""><span>신규매장</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <!-- 브랜드스토리 -->
+                  <li>
+                    <button type="button">
+                      <span>브랜드스토리</span>
+                      <i class="fas fa-sort-down down__iocon"></i>
+                    </button>
+                    <ul class="submenu">
+                      <li>
+                        <a href=""><span>버거킹 스토리</span></a>
+                      </li>
+
+                      <li>
+                        <a href=""><span>WHY 버거킹</span></a>
+                      </li>
+                      <li>
+                        <a href=""><span>버거킹 NEWS</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="MOB">
+                    <button type="button">
+                      <span>고객센터</span>
+                    </button>
+                    <ul>
+                      <li>
+                        <a href=""><span>공지사항</span></a>
+                      </li>
+                      <li>
+                        <a href=""><span>버거킹앱이용안내</span></a>
+                      </li>
+                      <li>
+                        <a href=""><span>FAQ</span></a>
+                      </li>
+                      <li>
+                        <a href=""><span>문의</span></a>
+                      </li>
+                      <li>
+                        <a href=""><span>가맹점모집</span></a>
+                      </li>
+                      <li>
+                        <a href=""><span>인재채용</span></a>
+                      </li>
+                    </ul>
+                  </li>
+                  <div class="ul__background"></div>
+                </ul>
+
+                <!-- 딜리버리주문 버튼 -->
+                <button type="button" class="btn_order">
+                  <strong>딜리버리주문</strong>
+                  <i class="fas fa-chevron-right" style="font-size: 20px"></i>
+                </button>
+              </div>
             </div>
-
-            <!-- <ul
-              class="header-menu-inline-subtitle__box header-menu-inline-subtitle__menu"
-            >
-              <li class="header-menu-inline-menu__subtitle">
-                <a href="#">스폐셜&할인팩</a>
-              </li>
-              <li class="header-menu-inline-menu__subtitle">
-                <a href="#">프리미엄</a>
-              </li>
-               <li class="header-menu-inline-menu__subtitle">
-                <a href="#">프리미엄</a>
-              </li>
-              <li class="header-menu-inline-menu__subtitle">
-                <a href="#">와퍼</a>
-              </li>
-              <li class="header-menu-inline-menu__subtitle">
-                <a href="#">주니어&버거</a>
-              </li>
-              <li class="header-menu-inline-menu__subtitle">
-                <a href="#">올데이킹&치킨버거</a>
-              </li>
-              <li class="header-menu-inline-menu__subtitle">
-                <a href="#">사이드</a>
-              </li>
-              <li class="header-menu-inline-menu__subtitle">
-                <a href="#">음료&디저트</a>
-              </li> 
-            </ul> -->
-          </li>
-
-          <!-- 매장소개 -->
-          <li
-            class="header-menu-inline-title-box__nav header-menu-inline__store"
-          >
-            <div>
-              <span>매장소개</span>
-              <i class="fas fa-caret-down"></i>
-            </div>
-
-            <!-- <ul class="header-menu-inline-subtitle__box">
-              <li
-                class="header-menu-inline__subtitle header-menu-inline-subtitle__store"
-              >
-                <a href="">매장찾기</a>
-              </li>
-            </ul> -->
-          </li>
-
-          <!-- 이벤트 -->
-          <li
-            class="header-menu-inline-title-box__nav header-menu-inline__event"
-          >
-            <div>
-              <span
-                >이벤트
-                <i class="fas fa-caret-down"></i>
-              </span>
-            </div>
-            <ul
-              class="header-menu-inline-subtitle__box header-menu-inline-subtitle__event"
-            >
-              <li class="header-menu-inline__subtitle">
-                <a href="">이벤트</a>
-              </li>
-            </ul>
-          </li>
-
-          <!-- 브랜드스토리 -->
-          <li
-            class="header-menu-inline-title-box__nav header-menu-inline__brand"
-          >
-            <div>
-              <span>브랜드스토리</span>
-              <i class="fas fa-caret-down"></i>
-            </div>
-            <ul
-              class="header-menu-inline-subtitle__box header-menu-inline-subtitle__brand"
-            >
-              <li class="header-menu-inline__subtitle">
-                <a href="">버거킹스토리</a>
-              </li>
-              <li class="header-menu-inline__subtitle">
-                <a href="">WHY 버거킹</a>
-              </li>
-              <li class="header-menu-inline__subtitle">
-                <a href="">버거킹 NEWS</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <div class="header-menu-inline__button">
-          <div class="header-menu-inline__top-border"></div>
-          <button>딜리버리주문 <i class="fas fa-chevron-right"></i></button>
-          <div class="header-menu-inline__bottom-border"></div>
+          </div>
         </div>
       </div>
-    </header>
-
-    <!-- body -->
-    <!-- <section class="banner-image__slider">
-      <div class="banner-image-inline__box">
-        <ul>
-          <li class="aa">
-            <img
-              class="banner-image-inline-box__image"
-              src="/images/burgerkingbannerone.png"
-            />
-          </li>
-          <li>
-            <img
-              class="banner-image-inline-box__image"
-              src="/images/burgerkingbannertwo.png"
-            />
-          </li>
-          <li>
-            <img
-              class="banner-image-inline-box__image"
-              src="/images/burgerkingbannerthree.png"
-            />
-          </li>
-          <li>
-            <img
-              class="banner-image-inline-box__image"
-              src="/images/burgerkingbannerfour.png"
-            />
-          </li>
-           <li>
-            <img
-              class="banner-image-inline-box__image"
-              src="/images/burgerkingbannerfive.png"
-            />
-          </li>
-          <li>
-            <img
-              class="banner-image-inline-box__image"
-              src="/images/burgerkingbannersix.png"
-            />
-          </li>
-          <li>
-            <img
-              class="banner-image-inline-box__image"
-              src="/images/burgerkingbannerseven.png"
-            />
-          </li> 
-        </ul>
-      </div>
-    </section> -->
-
+    </div>
     <script
       src="https://kit.fontawesome.com/515636069a.js"
       crossorigin="anonymous"
