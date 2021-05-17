@@ -82,7 +82,6 @@ button {
   position: absolute;
   margin-top: 17px;
   margin-left: 10px;
-  /* height: 50px; */
   font-size: 12px;
   font-weight: bold;
 }
@@ -93,6 +92,18 @@ button {
   position: relative;
   margin-left: 15%;
   padding-right: 180px;
+}
+
+.GNB_open > ul:hover .ul__background:before {
+  content: "";
+  position: absolute;
+  right: -20px;
+  top: 298px;
+  width: 452px;
+  height: 120px;
+  background: url("/images/bg_login.819b3889.gif") no-repeat right -10px bottom;
+  visibility: visible;
+  z-index: 3;
 }
 .GNBWrap .submenu {
   position: absolute;
@@ -136,11 +147,19 @@ button {
 }
 .GNBWrap > ul:hover .submenu {
   width: 100%;
-  height: 320px;
   display: block;
   background-color: white;
   overflow: visible;
   position: absolute;
+  animation: submenuFadein 1s;
+}
+@keyframes submenuFadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .GNBWrap > ul:hover .ul__background {
   visibility: visible;
@@ -149,13 +168,22 @@ button {
   background-color: white;
   height: 335px;
   visibility: hidden;
-  /* opacity: 0; */
   left: 0;
   position: fixed;
   margin-top: 90px;
   width: 100%;
 }
-
+.background__image {
+  content: "";
+  position: absolute;
+  right: -245px;
+  top: 198px;
+  width: 452px;
+  height: 120px;
+  background: url("/images/bg_login.819b3889.gif") no-repeat right -10px bottom;
+  visibility: visible;
+  z-index: 3;
+}
 .submenu {
   position: absolute;
 }
@@ -184,5 +212,5 @@ button {
   text-align: center;
   display: inline;
   line-height: 50px;
-  background-color: red;
+  background-image: url("/images/btn_webhead_order.dd5f3d96.png");
 }

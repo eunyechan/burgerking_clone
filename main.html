@@ -55,8 +55,9 @@
                   <!-- 매장소개 -->
                   <li class="menu__open">
                     <button type="button">
-                      <span> 매장소개 </span>
-                      <i class="fas fa-sort-down down__iocon"></i>
+                      <span>
+                        매장소개 <i class="fas fa-sort-down down__iocon"></i
+                      ></span>
                     </button>
 
                     <ul class="submenu">
@@ -70,8 +71,9 @@
                   <!-- 이벤트 -->
                   <li class="menu__open">
                     <button type="button">
-                      <span>이벤트</span>
-                      <i class="fas fa-sort-down down__iocon"></i>
+                      <span
+                        >이벤트 <i class="fas fa-sort-down down__iocon"></i
+                      ></span>
                     </button>
                     <ul class="submenu">
                       <li>
@@ -85,8 +87,10 @@
                   <!-- 브랜드스토리 -->
                   <li>
                     <button type="button">
-                      <span>브랜드스토리</span>
-                      <i class="fas fa-sort-down down__iocon"></i>
+                      <span
+                        >브랜드스토리
+                        <i class="fas fa-sort-down down__iocon"></i
+                      ></span>
                     </button>
                     <ul class="submenu">
                       <li>
@@ -99,6 +103,7 @@
                       <li>
                         <a href=""><span>버거킹 NEWS</span></a>
                       </li>
+                      <div class="background__image"></div>
                     </ul>
                   </li>
                   <li class="MOB">
@@ -138,11 +143,96 @@
             </div>
           </div>
         </div>
+        <!-- banner -->
+
+        <div class="main-banner__Wrap">
+          <div class="main-banner-wrap__container">
+            <a class="image__prev" onclick="moveSlides(-1)">&#10094</a>
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">1 / 8</span>
+                <img src="/images/burgerkingbanner1.png" />
+              </div>
+            </div>
+
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">2 / 8</span>
+                <img src="/images/burgerkingbanner2.png" />
+              </div>
+            </div>
+
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">3 / 8</span>
+                <img src="/images/burgerkingbanner3.png" />
+              </div>
+            </div>
+
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">4 / 8</span>
+                <img src="/images/burgerkingbanner4.png" />
+              </div>
+            </div>
+
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">5 / 8</span>
+                <img src="/images/burgerkingbanner5.png" />
+              </div>
+            </div>
+
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">6 / 8</span>
+                <img src="/images/burgerkingbanner6.png" />
+              </div>
+            </div>
+
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">7 / 8</span>
+                <img src="/images/burgerkingbanner7.png" />
+              </div>
+            </div>
+
+            <div class="main-banner-wrap-container__inline">
+              <div class="main-banner-wrap-container-inline-slide__Image fade">
+                <span class="number__text">8 / 8</span>
+                <img src="/images/burgerkingbanner8.png" />
+              </div>
+            </div>
+            <a class="image__next" onclick="moveSlides(11)">&#10095</a>
+            <div style="text-align: center;">
+              <span class="dot" onclick="currentSlide(0)">
+              </span>
+              <span class="dot" onclick="currentSlide(1)">
+              </span>
+              <span class="dot" onclick="currentSlide(2)">
+              </span>
+              <span class="dot" onclick="currentSlide(3)">
+              </span>
+              <span class="dot" onclick="currentSlide(4)">
+              </span>
+              <span class="dot" onclick="currentSlide(5)">
+              </span>
+              <span class="dot" onclick="currentSlide(6)">
+              </span>
+              <span class="dot" onclick="currentSlide(7)">
+              </span>
+              <span class="dot" onclick="currentSlide(8)">
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
     <script
       src="https://kit.fontawesome.com/515636069a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="/mainbanner.js"></script>
   </body>
 </html>
