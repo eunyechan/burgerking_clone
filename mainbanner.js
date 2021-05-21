@@ -1,48 +1,118 @@
-const slideIndex = 0;
+const slideImage = document.querySelectorAll(
+  ".main-banner-wrap-container-inline-slide__Image"
+);
 
-// HTML 로드가 끝난 후 동작
-window.onload = function () {
-  showSlides(slideIndex);
+const slidesContainer = document.querySelector(
+  ".main-banner-wrap-container__inline"
+);
+const nextBtn = document.querySelector(".next-btn");
+const prevBtn = document.querySelector(".prev-btn");
+const navigationDots = document.querySelector(".navigation-dots");
 
-  // Auto Move Slide
-  const sec = 3000;
-  setInterval(function () {
-    slideIndex++;
-    showSlides(slideIndex);
-  }, sec);
-};
+let numberOfImages = slideImage.length;
+let slideWidth = slideImage[0].clientWidth;
+let currentSlide = 0;
+const SHOWING_CLASS = "showing";
+const firstSlide = document.querySelector(
+  ".main-banner-wrap-container-inline-slide__Image:first-child"
+);
 
-// Next/Previous controls
-function moveSlides(n) {
-  slideIndex = slideIndex + n;
-  showSlides(slideIndex);
+// Set up the slider
+
+function init() {
+  /*
+  slideImage[0] = 0
+  slideImage[1] = 100%
+  slideImage[2] = 200%
+  */
+
+  slideImage.forEach((img, i) => {
+    img.style.left = i * 100 + "%";
+  });
+
+  slideImage[0].classList.add("active");
+
+  createNavigationDots();
 }
+init();
 
-function currentSlide(n) {
-  slideIndex = n;
-  showSlides(slideIndex);
-}
+// Create navigation dots
 
-function showSlides(n) {
-  const slides = document.querySelector(".main-banner-wrap-container__inline");
-  const dots = document.querySelector(".dot");
-  const size = slides.length;
+function createNavigationDots() {
+  for (let i = 0; i < numberOfImages; i++) {
+    const dot = document.createElement("div");
+    dot.classList.add("single-dot");
+    navigationDots.appendChild(dot);
 
-  if (n + 1 > size) {
-    slideIndex = 0;
-    n = 0;
-  } else if (n < 0) {
-    slideIndex = size - 1;
-    n = size - 1;
+    dot.addEventListener("click", () => {
+      goToSlide(i);
+    });
   }
 
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = o; dots.length; i++) {
-    dots[i].className = dots[i].className.replace("active", "");
-  }
-
-  slides[n].style.display = "block";
-  dots[n].className += "active";
+  navigationDots.children[0].classList.add("active");
 }
+
+// Prev Button
+prevBtn.addEventListener("click", () => {
+  if (currentSlide <= 0) {
+    goToSlide(numberOfImages - 1);
+    return;
+  }
+  currentSlide--;
+  goToSlide(currentSlide);
+});
+// Next Button
+
+nextBtn.addEventListener("click", () => {
+  if (currentSlide >= numberOfImages - 1) {
+    goToSlide(0);
+    return;
+  }
+  currentSlide++;
+  goToSlide(currentSlide);
+});
+
+// Got To Slide
+
+function goToSlide(slideNumber) {
+  slidesContainer.style.transform =
+    "translateX(-" + slideWidth * slideNumber + "px)";
+
+  currentSlide = slideNumber;
+
+  setActiveClass();
+}
+
+// Set Active Class
+function setActiveClass() {
+  // Set active class for Slide Image
+
+  let currentActive = document.querySelector(
+    ".main-banner-wrap-container-inline-slide__Image.active"
+  );
+  currentActive.classList.remove("active");
+  slideImage[currentSlide].classList.add("active");
+
+  // set active class for navigation dots
+
+  let currentDot = document.querySelector(".single-dot.active");
+  currentDot.classList.remove("active");
+  navigationDots.children[currentSlide].classList.add("active");
+}
+
+function slide() {
+  const currentSlide = document.querySelector(`${SHOWING_CLASS}`);
+  if (currentSlide) {
+    currentSlide.classList.remove(SHOWING_CLASS);
+    const nextSlide = currentSlide.nextElementSibling;
+    if (nextSlide) {
+      nextSlide.classList.add(SHOWING_CLASS);
+    } else {
+      firstSlide.classList.add(SHOWING_CLASS);
+    }
+  } else {
+    firstSlide.classList.add(SHOWING_CLASS);
+  }
+}
+slide();
+setInterval(slide, 2000);
