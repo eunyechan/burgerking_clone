@@ -12,10 +12,6 @@ const navigationDots = document.querySelector(".navigation-dots");
 let numberOfImages = slideImage.length;
 let slideWidth = slideImage[0].clientWidth;
 let currentSlide = 0;
-const SHOWING_CLASS = "showing";
-const firstSlide = document.querySelector(
-  ".main-banner-wrap-container-inline-slide__Image:first-child"
-);
 
 // Set up the slider
 
@@ -99,20 +95,3 @@ function setActiveClass() {
   currentDot.classList.remove("active");
   navigationDots.children[currentSlide].classList.add("active");
 }
-
-function slide() {
-  const currentSlide = document.querySelector(`${SHOWING_CLASS}`);
-  if (currentSlide) {
-    currentSlide.classList.remove(SHOWING_CLASS);
-    const nextSlide = currentSlide.nextElementSibling;
-    if (nextSlide) {
-      nextSlide.classList.add(SHOWING_CLASS);
-    } else {
-      firstSlide.classList.add(SHOWING_CLASS);
-    }
-  } else {
-    firstSlide.classList.add(SHOWING_CLASS);
-  }
-}
-slide();
-setInterval(slide, 2000);
