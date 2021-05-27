@@ -11,6 +11,9 @@ body {
   background-color: #f2ebe6;
   word-wrap: normal;
   word-break: keep-all;
+  padding-left: 2.5em;
+  padding-right: 2.5em;
+  overflow-x: hidden;
 }
 
 ul,
